@@ -16,6 +16,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
+//        let startURL = try! FileManager.default.url(for: .desktopDirectory, in: .userDomainMask, appropriateFor: nil, create: false)
+        let startURL = URL(fileURLWithPath: "/Users/themegatb")
+        _ = FilesystemScan(path: startURL)
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

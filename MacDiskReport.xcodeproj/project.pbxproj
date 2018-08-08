@@ -10,6 +10,10 @@
 		30AC5BB7211B6B810043F12E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC5BB6211B6B810043F12E /* AppDelegate.swift */; };
 		30AC5BB9211B6B830043F12E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30AC5BB8211B6B830043F12E /* Assets.xcassets */; };
 		30AC5BBC211B6B830043F12E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30AC5BBA211B6B830043F12E /* MainMenu.xib */; };
+		30AC5BC5211B78EB0043F12E /* FilesystemNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC5BC4211B78EB0043F12E /* FilesystemNode.swift */; };
+		30AC5BC8211B79A70043F12E /* Directory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC5BC7211B79A70043F12E /* Directory.swift */; };
+		30AC5BCA211B7A480043F12E /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC5BC9211B7A480043F12E /* File.swift */; };
+		30AC5BCC211B7ACE0043F12E /* FilesystemScan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC5BCB211B7ACE0043F12E /* FilesystemScan.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		30AC5BBB211B6B830043F12E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		30AC5BBD211B6B830043F12E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30AC5BBE211B6B830043F12E /* MacDiskReport.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacDiskReport.entitlements; sourceTree = "<group>"; };
+		30AC5BC4211B78EB0043F12E /* FilesystemNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesystemNode.swift; sourceTree = "<group>"; };
+		30AC5BC7211B79A70043F12E /* Directory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Directory.swift; path = ../../../../macOS/MacDiskReport/MacDiskReport/FilesystemModel/Directory.swift; sourceTree = "<group>"; };
+		30AC5BC9211B7A480043F12E /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = File.swift; path = ../../../../macOS/MacDiskReport/MacDiskReport/FilesystemModel/File.swift; sourceTree = "<group>"; };
+		30AC5BCB211B7ACE0043F12E /* FilesystemScan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FilesystemScan.swift; path = ../../../../macOS/MacDiskReport/MacDiskReport/FilesystemModel/FilesystemScan.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,7 @@
 		30AC5BB5211B6B810043F12E /* MacDiskReport */ = {
 			isa = PBXGroup;
 			children = (
+				30AC5BC6211B791E0043F12E /* FilesystemModel */,
 				30AC5BB6211B6B810043F12E /* AppDelegate.swift */,
 				30AC5BB8211B6B830043F12E /* Assets.xcassets */,
 				30AC5BBA211B6B830043F12E /* MainMenu.xib */,
@@ -58,6 +67,17 @@
 				30AC5BBE211B6B830043F12E /* MacDiskReport.entitlements */,
 			);
 			path = MacDiskReport;
+			sourceTree = "<group>";
+		};
+		30AC5BC6211B791E0043F12E /* FilesystemModel */ = {
+			isa = PBXGroup;
+			children = (
+				30AC5BCB211B7ACE0043F12E /* FilesystemScan.swift */,
+				30AC5BC4211B78EB0043F12E /* FilesystemNode.swift */,
+				30AC5BC7211B79A70043F12E /* Directory.swift */,
+				30AC5BC9211B7A480043F12E /* File.swift */,
+			);
+			path = FilesystemModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,6 +112,11 @@
 				TargetAttributes = {
 					30AC5BB2211B6B810043F12E = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -130,7 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30AC5BCC211B7ACE0043F12E /* FilesystemScan.swift in Sources */,
+				30AC5BC5211B78EB0043F12E /* FilesystemNode.swift in Sources */,
+				30AC5BCA211B7A480043F12E /* File.swift in Sources */,
 				30AC5BB7211B6B810043F12E /* AppDelegate.swift in Sources */,
+				30AC5BC8211B79A70043F12E /* Directory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +296,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = MacDiskReport/MacDiskReport.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MacDiskReport/Info.plist;
@@ -285,7 +313,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = MacDiskReport/MacDiskReport.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MacDiskReport/Info.plist;
