@@ -51,13 +51,21 @@
 		30AC5BB5211B6B810043F12E /* MacDiskReport */ = {
 			isa = PBXGroup;
 			children = (
+				401B54B5211B7859004AF7C7 /* Supporting Files */,
+			);
+			path = MacDiskReport;
+			sourceTree = "<group>";
+		};
+		401B54B5211B7859004AF7C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				30AC5BB6211B6B810043F12E /* AppDelegate.swift */,
 				30AC5BB8211B6B830043F12E /* Assets.xcassets */,
 				30AC5BBA211B6B830043F12E /* MainMenu.xib */,
 				30AC5BBD211B6B830043F12E /* Info.plist */,
 				30AC5BBE211B6B830043F12E /* MacDiskReport.entitlements */,
 			);
-			path = MacDiskReport;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
