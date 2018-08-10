@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		30AC5BB7211B6B810043F12E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC5BB6211B6B810043F12E /* AppDelegate.swift */; };
 		30AC5BB9211B6B830043F12E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30AC5BB8211B6B830043F12E /* Assets.xcassets */; };
+		30AC5BC5211B78EB0043F12E /* FilesystemNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC5BC4211B78EB0043F12E /* FilesystemNode.swift */; };
+		30AC5BC8211B79A70043F12E /* Directory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC5BC7211B79A70043F12E /* Directory.swift */; };
+		30AC5BCA211B7A480043F12E /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC5BC9211B7A480043F12E /* File.swift */; };
+		30AC5BCC211B7ACE0043F12E /* FilesystemScan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC5BCB211B7ACE0043F12E /* FilesystemScan.swift */; };
 		401B54BB211B7A5A004AF7C7 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B54BA211B7A5A004AF7C7 /* PieChartView.swift */; };
 		401B54D9211B8768004AF7C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 401B54D8211B8768004AF7C7 /* Main.storyboard */; };
 		401B54DB211B88D2004AF7C7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B54DA211B88D2004AF7C7 /* MainViewController.swift */; };
@@ -18,6 +21,7 @@
 		401B54E4211E23E6004AF7C7 /* PieChartViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B54E3211E23E6004AF7C7 /* PieChartViewDelegate.swift */; };
 		401B54E6211E23F7004AF7C7 /* PieChartViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B54E5211E23F7004AF7C7 /* PieChartViewDataSource.swift */; };
 		401B54E8211E43A4004AF7C7 /* CALayer+Presentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B54E7211E43A4004AF7C7 /* CALayer+Presentation.swift */; };
+		401B54ED211E54BC004AF7C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC5BB6211B6B810043F12E /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		30AC5BB8211B6B830043F12E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30AC5BBD211B6B830043F12E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30AC5BBE211B6B830043F12E /* MacDiskReport.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacDiskReport.entitlements; sourceTree = "<group>"; };
+		30AC5BC4211B78EB0043F12E /* FilesystemNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesystemNode.swift; sourceTree = "<group>"; };
+		30AC5BC7211B79A70043F12E /* Directory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Directory.swift; path = ../../../../macOS/MacDiskReport/MacDiskReport/FilesystemModel/Directory.swift; sourceTree = "<group>"; };
+		30AC5BC9211B7A480043F12E /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = File.swift; path = ../../../../macOS/MacDiskReport/MacDiskReport/FilesystemModel/File.swift; sourceTree = "<group>"; };
+		30AC5BCB211B7ACE0043F12E /* FilesystemScan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FilesystemScan.swift; path = ../../../../macOS/MacDiskReport/MacDiskReport/FilesystemModel/FilesystemScan.swift; sourceTree = "<group>"; };
 		401B54BA211B7A5A004AF7C7 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
 		401B54D8211B8768004AF7C7 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		401B54DA211B88D2004AF7C7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -68,9 +76,21 @@
 			isa = PBXGroup;
 			children = (
 				401B54B5211B7859004AF7C7 /* Supporting Files */,
+				30AC5BC6211B791E0043F12E /* FilesystemModel */,
 				401B54B6211B797B004AF7C7 /* GUI */,
 			);
 			path = MacDiskReport;
+			sourceTree = "<group>";
+		};
+		30AC5BC6211B791E0043F12E /* FilesystemModel */ = {
+			isa = PBXGroup;
+			children = (
+				30AC5BCB211B7ACE0043F12E /* FilesystemScan.swift */,
+				30AC5BC4211B78EB0043F12E /* FilesystemNode.swift */,
+				30AC5BC7211B79A70043F12E /* Directory.swift */,
+				30AC5BC9211B7A480043F12E /* File.swift */,
+			);
+			path = FilesystemModel;
 			sourceTree = "<group>";
 		};
 		401B54B5211B7859004AF7C7 /* Supporting Files */ = {
@@ -149,6 +169,11 @@
 				TargetAttributes = {
 					30AC5BB2211B6B810043F12E = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -208,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				401B54ED211E54BC004AF7C7 /* AppDelegate.swift in Sources */,
 				401B54E4211E23E6004AF7C7 /* PieChartViewDelegate.swift in Sources */,
 				401B54E2211E0818004AF7C7 /* CAAnimation+Completion.swift in Sources */,
 				401B54DB211B88D2004AF7C7 /* MainViewController.swift in Sources */,
@@ -215,8 +241,11 @@
 				401B54BB211B7A5A004AF7C7 /* PieChartView.swift in Sources */,
 				401B54E6211E23F7004AF7C7 /* PieChartViewDataSource.swift in Sources */,
 				401B54E0211D7F54004AF7C7 /* AnimatedVisualizationDataManager.swift in Sources */,
-				30AC5BB7211B6B810043F12E /* AppDelegate.swift in Sources */,
 				401B54E8211E43A4004AF7C7 /* CALayer+Presentation.swift in Sources */,
+				30AC5BCC211B7ACE0043F12E /* FilesystemScan.swift in Sources */,
+				30AC5BC5211B78EB0043F12E /* FilesystemNode.swift in Sources */,
+				30AC5BCA211B7A480043F12E /* File.swift in Sources */,
+				30AC5BC8211B79A70043F12E /* Directory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

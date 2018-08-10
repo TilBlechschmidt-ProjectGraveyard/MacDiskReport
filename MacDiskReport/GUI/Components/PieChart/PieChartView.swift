@@ -40,7 +40,8 @@ public class PieChartView: NSView {
     /// The manager for the dataa shown in the piechart.
     private let dataManager = DataManager()
 
-    private func createSlice(size: Double, color: CGColor, highlightColor: CGColor, startAngle: CGFloat) -> PieChartSlice {
+    private func createSlice(size: Double, color: CGColor, highlightColor: CGColor,
+                             startAngle: CGFloat) -> PieChartSlice {
         let sliceLayer = PieSliceLayer()
         sliceLayer.needsDisplayOnBoundsChange = true
         sliceLayer.fillColor = color
