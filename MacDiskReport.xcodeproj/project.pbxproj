@@ -9,16 +9,32 @@
 /* Begin PBXBuildFile section */
 		30AC5BB7211B6B810043F12E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC5BB6211B6B810043F12E /* AppDelegate.swift */; };
 		30AC5BB9211B6B830043F12E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30AC5BB8211B6B830043F12E /* Assets.xcassets */; };
-		30AC5BBC211B6B830043F12E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30AC5BBA211B6B830043F12E /* MainMenu.xib */; };
+		401B54BB211B7A5A004AF7C7 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B54BA211B7A5A004AF7C7 /* PieChartView.swift */; };
+		401B54D9211B8768004AF7C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 401B54D8211B8768004AF7C7 /* Main.storyboard */; };
+		401B54DB211B88D2004AF7C7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B54DA211B88D2004AF7C7 /* MainViewController.swift */; };
+		401B54DD211BB197004AF7C7 /* PieSliceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B54DC211BB197004AF7C7 /* PieSliceLayer.swift */; };
+		401B54E0211D7F54004AF7C7 /* AnimatedVisualizationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B54DF211D7F54004AF7C7 /* AnimatedVisualizationDataManager.swift */; };
+		401B54E2211E0818004AF7C7 /* CAAnimation+Completion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B54E1211E0818004AF7C7 /* CAAnimation+Completion.swift */; };
+		401B54E4211E23E6004AF7C7 /* PieChartViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B54E3211E23E6004AF7C7 /* PieChartViewDelegate.swift */; };
+		401B54E6211E23F7004AF7C7 /* PieChartViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B54E5211E23F7004AF7C7 /* PieChartViewDataSource.swift */; };
+		401B54E8211E43A4004AF7C7 /* CALayer+Presentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B54E7211E43A4004AF7C7 /* CALayer+Presentation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		30AC5BB3211B6B810043F12E /* MacDiskReport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacDiskReport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30AC5BB6211B6B810043F12E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30AC5BB8211B6B830043F12E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		30AC5BBB211B6B830043F12E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		30AC5BBD211B6B830043F12E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30AC5BBE211B6B830043F12E /* MacDiskReport.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacDiskReport.entitlements; sourceTree = "<group>"; };
+		401B54BA211B7A5A004AF7C7 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		401B54D8211B8768004AF7C7 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		401B54DA211B88D2004AF7C7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		401B54DC211BB197004AF7C7 /* PieSliceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieSliceLayer.swift; sourceTree = "<group>"; };
+		401B54DF211D7F54004AF7C7 /* AnimatedVisualizationDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedVisualizationDataManager.swift; sourceTree = "<group>"; };
+		401B54E1211E0818004AF7C7 /* CAAnimation+Completion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAAnimation+Completion.swift"; sourceTree = "<group>"; };
+		401B54E3211E23E6004AF7C7 /* PieChartViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewDelegate.swift; sourceTree = "<group>"; };
+		401B54E5211E23F7004AF7C7 /* PieChartViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewDataSource.swift; sourceTree = "<group>"; };
+		401B54E7211E43A4004AF7C7 /* CALayer+Presentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Presentation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				401B54B5211B7859004AF7C7 /* Supporting Files */,
+				401B54B6211B797B004AF7C7 /* GUI */,
 			);
 			path = MacDiskReport;
 			sourceTree = "<group>";
@@ -61,11 +78,42 @@
 			children = (
 				30AC5BB6211B6B810043F12E /* AppDelegate.swift */,
 				30AC5BB8211B6B830043F12E /* Assets.xcassets */,
-				30AC5BBA211B6B830043F12E /* MainMenu.xib */,
 				30AC5BBD211B6B830043F12E /* Info.plist */,
 				30AC5BBE211B6B830043F12E /* MacDiskReport.entitlements */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		401B54B6211B797B004AF7C7 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				401B54D8211B8768004AF7C7 /* Main.storyboard */,
+				401B54DA211B88D2004AF7C7 /* MainViewController.swift */,
+				401B54B9211B7A1A004AF7C7 /* Components */,
+			);
+			path = GUI;
+			sourceTree = "<group>";
+		};
+		401B54B9211B7A1A004AF7C7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				401B54DE211C3C06004AF7C7 /* PieChart */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		401B54DE211C3C06004AF7C7 /* PieChart */ = {
+			isa = PBXGroup;
+			children = (
+				401B54BA211B7A5A004AF7C7 /* PieChartView.swift */,
+				401B54E3211E23E6004AF7C7 /* PieChartViewDelegate.swift */,
+				401B54E5211E23F7004AF7C7 /* PieChartViewDataSource.swift */,
+				401B54DC211BB197004AF7C7 /* PieSliceLayer.swift */,
+				401B54DF211D7F54004AF7C7 /* AnimatedVisualizationDataManager.swift */,
+				401B54E1211E0818004AF7C7 /* CAAnimation+Completion.swift */,
+				401B54E7211E43A4004AF7C7 /* CALayer+Presentation.swift */,
+			);
+			path = PieChart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,8 +175,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				401B54D9211B8768004AF7C7 /* Main.storyboard in Resources */,
 				30AC5BB9211B6B830043F12E /* Assets.xcassets in Resources */,
-				30AC5BBC211B6B830043F12E /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,22 +208,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				401B54E4211E23E6004AF7C7 /* PieChartViewDelegate.swift in Sources */,
+				401B54E2211E0818004AF7C7 /* CAAnimation+Completion.swift in Sources */,
+				401B54DB211B88D2004AF7C7 /* MainViewController.swift in Sources */,
+				401B54DD211BB197004AF7C7 /* PieSliceLayer.swift in Sources */,
+				401B54BB211B7A5A004AF7C7 /* PieChartView.swift in Sources */,
+				401B54E6211E23F7004AF7C7 /* PieChartViewDataSource.swift in Sources */,
+				401B54E0211D7F54004AF7C7 /* AnimatedVisualizationDataManager.swift in Sources */,
 				30AC5BB7211B6B810043F12E /* AppDelegate.swift in Sources */,
+				401B54E8211E43A4004AF7C7 /* CALayer+Presentation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		30AC5BBA211B6B830043F12E /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				30AC5BBB211B6B830043F12E /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		30AC5BBF211B6B830043F12E /* Debug */ = {
@@ -297,10 +342,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = MacDiskReport/MacDiskReport.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "MacDiskReport/Supporting Files/MacDiskReport.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = MacDiskReport/Info.plist;
+				INFOPLIST_FILE = "MacDiskReport/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -315,10 +360,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = MacDiskReport/MacDiskReport.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "MacDiskReport/Supporting Files/MacDiskReport.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = MacDiskReport/Info.plist;
+				INFOPLIST_FILE = "MacDiskReport/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
