@@ -18,7 +18,6 @@ class TestDelegate: ScanManagerDelegate {
     }
 
     func scanManager(_ scanManager: ScanManager, didDiscoverElements: [FileSystemNode]) {
-        // Implement smth
         counter += 1
         if counter % 10000 == 0 {
             print(scanManager.progress)
@@ -40,12 +39,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     let manager = ScanManager(path: URL(fileURLWithPath: "/Users/themegatb/"))
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
         manager.delegate = test
-
         manager.continueScan()
-
-        print("Start\n")
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

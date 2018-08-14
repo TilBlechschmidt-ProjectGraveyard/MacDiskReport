@@ -1,5 +1,5 @@
 //
-//  FilesystemScan.swift
+//  ScanManager.swift
 //  MacDiskReport
 //
 //  Created by Til Blechschmidt on 08.08.18.
@@ -31,6 +31,9 @@ class ScanManager {
 
         currentLayer.append((baseURL, baseDirectory))
 
+//        let watcher = FileWatcher([baseURL.path])
+//        watcher.queue = DispatchQueue.global()
+//        watcher.start()
     }
 
     func interrupt() {
