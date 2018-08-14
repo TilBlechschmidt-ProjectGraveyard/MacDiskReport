@@ -8,13 +8,44 @@
 
 import Cocoa
 
+class TestDelegate: ScanManagerDelegate {
+    var counter = 0
+
+    func scanManager(_ scanManager: ScanManager, didFinishScanOf: FileSystemNode) {
+        print("Scan was finished")
+        print(scanManager.progress)
+        print("\(scanManager.baseDirectory.size / 1024 / 1024 / 1024) GB")
+    }
+
+    func scanManager(_ scanManager: ScanManager, didDiscoverElements: [FileSystemNode]) {
+        // Implement smth
+        counter += 1
+        if counter % 10000 == 0 {
+            print(scanManager.progress)
+            counter = 0
+        }
+    }
+
+    func scanManagerWasInterrupted(_ scanManager: ScanManager) {
+        print("Scan got interrupted")
+        print(scanManager.progress)
+    }
+}
+
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var window: NSWindow!
+    let test = TestDelegate()
+    let manager = ScanManager(path: URL(fileURLWithPath: "/Users/themegatb/"))
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
+        manager.delegate = test
+
+        manager.continueScan()
+
+        print("Start\n")
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

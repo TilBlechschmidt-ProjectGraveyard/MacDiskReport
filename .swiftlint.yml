@@ -10,3 +10,6 @@ enabled_rules:
   - implicit_return
   - let_var_whitespace
   - literal_expression_end_indentation
+identifier_name:
+  excluded:
+    - id

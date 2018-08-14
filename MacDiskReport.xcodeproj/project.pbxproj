@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		30AC5BB9211B6B830043F12E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30AC5BB8211B6B830043F12E /* Assets.xcassets */; };
-		30AC5BC5211B78EB0043F12E /* FilesystemNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC5BC4211B78EB0043F12E /* FilesystemNode.swift */; };
-		30AC5BC8211B79A70043F12E /* Directory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC5BC7211B79A70043F12E /* Directory.swift */; };
-		30AC5BCA211B7A480043F12E /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC5BC9211B7A480043F12E /* File.swift */; };
 		30AC5BCC211B7ACE0043F12E /* FilesystemScan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC5BCB211B7ACE0043F12E /* FilesystemScan.swift */; };
 		401B54BB211B7A5A004AF7C7 /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B54BA211B7A5A004AF7C7 /* PieChartView.swift */; };
 		401B54D9211B8768004AF7C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 401B54D8211B8768004AF7C7 /* Main.storyboard */; };
@@ -22,6 +19,11 @@
 		401B54E6211E23F7004AF7C7 /* PieChartViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B54E5211E23F7004AF7C7 /* PieChartViewDataSource.swift */; };
 		401B54E8211E43A4004AF7C7 /* CALayer+Presentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B54E7211E43A4004AF7C7 /* CALayer+Presentation.swift */; };
 		401B54ED211E54BC004AF7C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC5BB6211B6B810043F12E /* AppDelegate.swift */; };
+		30AC5BBC211B6B830043F12E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30AC5BBA211B6B830043F12E /* MainMenu.xib */; };
+		30AC5BC8211B79A70043F12E /* FileSystemNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC5BC7211B79A70043F12E /* FileSystemNode.swift */; };
+		30AC5BCC211B7ACE0043F12E /* ScanManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC5BCB211B7ACE0043F12E /* ScanManager.swift */; };
+		30BE14C4212305E200446B1B /* FileWatcherEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BE14C3212305E200446B1B /* FileWatcherEvent.swift */; };
+		30BE14C6212306E900446B1B /* FileWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BE14C5212306E900446B1B /* FileWatcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,9 +32,6 @@
 		30AC5BB8211B6B830043F12E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30AC5BBD211B6B830043F12E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30AC5BBE211B6B830043F12E /* MacDiskReport.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacDiskReport.entitlements; sourceTree = "<group>"; };
-		30AC5BC4211B78EB0043F12E /* FilesystemNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesystemNode.swift; sourceTree = "<group>"; };
-		30AC5BC7211B79A70043F12E /* Directory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Directory.swift; path = ../../../../macOS/MacDiskReport/MacDiskReport/FilesystemModel/Directory.swift; sourceTree = "<group>"; };
-		30AC5BC9211B7A480043F12E /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = File.swift; path = ../../../../macOS/MacDiskReport/MacDiskReport/FilesystemModel/File.swift; sourceTree = "<group>"; };
 		30AC5BCB211B7ACE0043F12E /* FilesystemScan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FilesystemScan.swift; path = ../../../../macOS/MacDiskReport/MacDiskReport/FilesystemModel/FilesystemScan.swift; sourceTree = "<group>"; };
 		401B54BA211B7A5A004AF7C7 /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
 		401B54D8211B8768004AF7C7 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -43,6 +42,10 @@
 		401B54E3211E23E6004AF7C7 /* PieChartViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewDelegate.swift; sourceTree = "<group>"; };
 		401B54E5211E23F7004AF7C7 /* PieChartViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewDataSource.swift; sourceTree = "<group>"; };
 		401B54E7211E43A4004AF7C7 /* CALayer+Presentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Presentation.swift"; sourceTree = "<group>"; };
+		30AC5BC7211B79A70043F12E /* FileSystemNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystemNode.swift; sourceTree = "<group>"; };
+		30AC5BCB211B7ACE0043F12E /* ScanManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanManager.swift; sourceTree = "<group>"; };
+		30BE14C3212305E200446B1B /* FileWatcherEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWatcherEvent.swift; sourceTree = "<group>"; };
+		30BE14C5212306E900446B1B /* FileWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileWatcher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +89,10 @@
 			isa = PBXGroup;
 			children = (
 				30AC5BCB211B7ACE0043F12E /* FilesystemScan.swift */,
-				30AC5BC4211B78EB0043F12E /* FilesystemNode.swift */,
-				30AC5BC7211B79A70043F12E /* Directory.swift */,
-				30AC5BC9211B7A480043F12E /* File.swift */,
+				30AC5BCB211B7ACE0043F12E /* ScanManager.swift */,
+				30AC5BC7211B79A70043F12E /* FileSystemNode.swift */,
+				30BE14C3212305E200446B1B /* FileWatcherEvent.swift */,
+				30BE14C5212306E900446B1B /* FileWatcher.swift */,
 			);
 			path = FilesystemModel;
 			sourceTree = "<group>";
@@ -243,9 +247,11 @@
 				401B54E0211D7F54004AF7C7 /* AnimatedVisualizationDataManager.swift in Sources */,
 				401B54E8211E43A4004AF7C7 /* CALayer+Presentation.swift in Sources */,
 				30AC5BCC211B7ACE0043F12E /* FilesystemScan.swift in Sources */,
-				30AC5BC5211B78EB0043F12E /* FilesystemNode.swift in Sources */,
-				30AC5BCA211B7A480043F12E /* File.swift in Sources */,
-				30AC5BC8211B79A70043F12E /* Directory.swift in Sources */,
+				30AC5BCC211B7ACE0043F12E /* ScanManager.swift in Sources */,
+				30BE14C4212305E200446B1B /* FileWatcherEvent.swift in Sources */,
+				30BE14C6212306E900446B1B /* FileWatcher.swift in Sources */,
+				30AC5BB7211B6B810043F12E /* AppDelegate.swift in Sources */,
+				30AC5BC8211B79A70043F12E /* FileSystemNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,7 +380,7 @@
 				CODE_SIGN_ENTITLEMENTS = "MacDiskReport/Supporting Files/MacDiskReport.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "MacDiskReport/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MacDiskReport/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -392,7 +398,7 @@
 				CODE_SIGN_ENTITLEMENTS = "MacDiskReport/Supporting Files/MacDiskReport.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "MacDiskReport/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MacDiskReport/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
