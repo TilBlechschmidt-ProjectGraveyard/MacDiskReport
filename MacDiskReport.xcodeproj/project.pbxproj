@@ -22,6 +22,8 @@
 		401B54E6211E23F7004AF7C7 /* PieChartViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B54E5211E23F7004AF7C7 /* PieChartViewDataSource.swift */; };
 		401B54E8211E43A4004AF7C7 /* CALayer+Presentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401B54E7211E43A4004AF7C7 /* CALayer+Presentation.swift */; };
 		401B54ED211E54BC004AF7C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC5BB6211B6B810043F12E /* AppDelegate.swift */; };
+		4063B1AC211F56310034CBF1 /* UserInterfaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4063B1AB211F56310034CBF1 /* UserInterfaceManager.swift */; };
+		4063B1AE211F56F10034CBF1 /* MacDiskReportWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4063B1AD211F56F10034CBF1 /* MacDiskReportWindowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		401B54E3211E23E6004AF7C7 /* PieChartViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewDelegate.swift; sourceTree = "<group>"; };
 		401B54E5211E23F7004AF7C7 /* PieChartViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewDataSource.swift; sourceTree = "<group>"; };
 		401B54E7211E43A4004AF7C7 /* CALayer+Presentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Presentation.swift"; sourceTree = "<group>"; };
+		4063B1AB211F56310034CBF1 /* UserInterfaceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInterfaceManager.swift; sourceTree = "<group>"; };
+		4063B1AD211F56F10034CBF1 /* MacDiskReportWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacDiskReportWindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 			children = (
 				401B54D8211B8768004AF7C7 /* Main.storyboard */,
 				401B54DA211B88D2004AF7C7 /* MainViewController.swift */,
+				4063B1AD211F56F10034CBF1 /* MacDiskReportWindowController.swift */,
+				4063B1AB211F56310034CBF1 /* UserInterfaceManager.swift */,
 				401B54B9211B7A1A004AF7C7 /* Components */,
 			);
 			path = GUI;
@@ -237,7 +243,9 @@
 				401B54E4211E23E6004AF7C7 /* PieChartViewDelegate.swift in Sources */,
 				401B54E2211E0818004AF7C7 /* CAAnimation+Completion.swift in Sources */,
 				401B54DB211B88D2004AF7C7 /* MainViewController.swift in Sources */,
+				4063B1AC211F56310034CBF1 /* UserInterfaceManager.swift in Sources */,
 				401B54DD211BB197004AF7C7 /* PieSliceLayer.swift in Sources */,
+				4063B1AE211F56F10034CBF1 /* MacDiskReportWindowController.swift in Sources */,
 				401B54BB211B7A5A004AF7C7 /* PieChartView.swift in Sources */,
 				401B54E6211E23F7004AF7C7 /* PieChartViewDataSource.swift in Sources */,
 				401B54E0211D7F54004AF7C7 /* AnimatedVisualizationDataManager.swift in Sources */,

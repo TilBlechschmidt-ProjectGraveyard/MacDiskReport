@@ -8,6 +8,8 @@
 
 import Foundation
 
+
+
 class FilesystemScan {
     let fileManager = FileManager.default
     let baseURL: URL
